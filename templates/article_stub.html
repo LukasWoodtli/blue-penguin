@@ -14,7 +14,7 @@
 
                 <div class="info">
                     {% if article.category.name != "misc" %}
-                    &nbsp;&middot;&nbsp;<a href="{{ SITEURL }}/{{ article.category.url }}" rel="tag">{{ article.category }}</a>
+                    <a href="{{ SITEURL }}/{{ article.category.url }}" rel="tag">{{ article.category }}</a>
                     {% endif %}
                     {% if article.tags %}
                     &nbsp;&middot;
