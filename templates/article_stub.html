@@ -13,7 +13,6 @@
                 <div class="clear"></div>
 
                 <div class="info">
-                    <a href="{{ SITEURL }}/{{ article.url }}">posted at {{ article.date.strftime("%H:%M") }}</a>
                     {% if article.category.name != "misc" %}
                     &nbsp;&middot;&nbsp;<a href="{{ SITEURL }}/{{ article.category.url }}" rel="tag">{{ article.category }}</a>
                     {% endif %}
@@ -25,7 +24,7 @@
                     {% endif %}
                 </div>
 		{% if articles_page %}
-		<a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Click to read and post comments</a>
+		<a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Mehr...</a>
 		{% else %}
 		{% include "disqus.html" %}
 		{% endif %}
